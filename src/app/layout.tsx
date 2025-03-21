@@ -1,3 +1,4 @@
+import Footer from "@/components/ui/Footer";
 import Header from "@/components/ui/Header";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -31,6 +32,7 @@ export default function RootLayout({
           <Image src={"/nick.jpg"} width={500} height={500} alt="Nick" />
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
