@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <section className="my-5">
@@ -7,24 +9,24 @@ export default function Header() {
         </h1>
         <ul className="w-full flex justify-end gap-3">
           <li>
-            <a className="header-link" href="#home">
+            <Link className="header-link" href="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="header-link" href="#about">
+            <Link className="header-link" href="/about">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="header-link" href="#experience">
+            <Link className="header-link" href="/experience">
               Experience
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="header-link" href="#contact">
+            <Link className="header-link" href="/contact">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

@@ -1,5 +1,7 @@
+import Header from "@/components/ui/Header";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -21,8 +23,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${poppins.variable} antialiased`}>
-        {children}
+      <body
+        className={`${poppins.variable} ${poppins.variable} antialiased mx-15`}
+      >
+        <Header />
+        <main className="flex">
+          <Image src={"/nick.jpg"} width={500} height={500} alt="Nick" />
+          {children}
+        </main>
       </body>
     </html>
   );
