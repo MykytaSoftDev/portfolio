@@ -1,7 +1,9 @@
+import About from "@/components/About";
+
 export default function AboutPage() {
   return (
-    <section>
-      <div></div>
-    </section>
+    <>
+      <About />
+    </>
   );
 }

@@ -2,7 +2,7 @@ import { Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-between py-5">
+    <footer className="flex items-center justify-between py-5 mx-15">
       <p className="font-medium">Copyright © 2025</p>
       <ul className="flex gap-2">
         <li>

@@ -25,11 +25,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${poppins.variable} antialiased mx-15`}
+        className={`${poppins.variable} ${poppins.variable} antialiased  max-w-screen overflow-hidden`}
       >
         <Header />
-        <main className="flex">
-          <Image src={"/nick.jpg"} width={500} height={500} alt="Nick" />
+        <main className="flex justify-start items-center mx-15">
+          <Image
+            src={"/nick.jpg"}
+            width={500}
+            height={500}
+            className="max-md:hidden"
+            alt="Nick"
+          />
           {children}
         </main>
         <Footer />

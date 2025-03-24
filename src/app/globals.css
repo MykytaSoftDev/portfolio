@@ -21,7 +21,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 .header-link {
@@ -49,12 +50,12 @@ body {
   transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
-.contact_button a:hover {
+.contact-button a:hover {
   background-color: transparent;
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
-.contact_button a {
+.contact-button a {
   --tw-border-opacity: 1;
   --tw-bg-opacity: 1;
   --tw-text-opacity: 1;
@@ -65,6 +66,29 @@ body {
   padding-right: 38px;
   padding-top: 13px;
   padding-bottom: 13px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+  border-color: rgb(51 51 51 / var(--tw-border-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.skill-badge:hover {
+  background-color: transparent;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+  cursor: pointer;
+}
+
+.skill-badge {
+  --tw-border-opacity: 1;
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
   font-family: Poppins, sans-serif;
   font-weight: 500;
   background-color: rgb(51 51 51 / var(--tw-bg-opacity));
