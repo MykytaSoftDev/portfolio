@@ -25,37 +25,35 @@ body {
   height: 100vh;
 }
 
-.header-link {
-  padding: 10px 15px;
-  font-weight: 500;
-  position: relative;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover {
-  background: linear-gradient(135deg, #000000, #222222);
-  color: #ffffff;
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.header-link::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #ffffff;
-  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
-}
-
-.contact-button a:hover {
+.header-button a:hover {
   background-color: transparent;
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
-.contact-button a {
+.header-button a {
+  --tw-border-opacity: 1;
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+  border-color: rgb(51 51 51 / var(--tw-border-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.button a:hover {
+  background-color: transparent;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.button a {
   --tw-border-opacity: 1;
   --tw-bg-opacity: 1;
   --tw-text-opacity: 1;
@@ -94,6 +92,24 @@ body {
   background-color: rgb(51 51 51 / var(--tw-bg-opacity));
   border-color: rgb(51 51 51 / var(--tw-border-opacity));
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.contact-block:hover {
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  cursor: pointer;
+}
+
+.contact-block {
+  --tw-border-opacity: 1;
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  border: 2px solid rgb(51 51 51 / var(--tw-border-opacity));
+  font-family: Poppins, sans-serif;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;

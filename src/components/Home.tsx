@@ -8,7 +8,7 @@ export function Home() {
       <h3 className="job text-[25px] mb-5 font-light">
         <b>Full Stack Software Engineer</b>
       </h3>
-      <div className="contact-button">
+      <div className="button">
         <Link href="/contact">Get in Touch</Link>
       </div>
     </div>
