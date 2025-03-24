@@ -28,7 +28,7 @@ export default function RootLayout({
         className={`${poppins.variable} ${poppins.variable} antialiased  max-w-screen overflow-hidden`}
       >
         <Header />
-        <main className="flex justify-start items-center mx-15">
+        <main className="w-full h-auto flex justify-center items-center mx-15">
           <Image
             src={"/nick.jpg"}
             width={500}
